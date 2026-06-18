@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce Dashboard</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+
+    <header class="page-header">
+        <h1>E-Commerce Product Dashboard</h1>
+    </header>
+
+    <main>
+        <section class="controls">
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="Search Products..."
+            >
+
+            <select id="categoryFilter">
+                <option value="all">All</option>
+                <option value="men's clothing">Men's Clothing</option>
+                <option value="women's clothing">Women's Clothing</option>
+                <option value="electronics">Electronics</option>
+                <option value="jewelery">Jewelry</option>
+            </select>
+
+            <div class="cart-box">
+                Cart Items:
+                <span id="cartCount">0</span>
+            </div>
+        </section>
+
+        <h2 id="loading">Loading Products...</h2>
+
+        <section class="stats" id="stats"></section>
+
+        <section id="products" class="product-container"></section>
+
+        <section class="cart-section">
+            <h2>Cart</h2>
+            <div id="cart"></div>
+        </section>
+    </main>
+
+    <script src="Task9.js"></script>
+</body>
+</html>
